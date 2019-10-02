@@ -4,6 +4,9 @@ import java.util.Scanner;
 public class Problems {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
+        // Problem 1
+
         boolean flag = true;
         System.out.print("Enter a month as a number: ");
         int numMonth;
