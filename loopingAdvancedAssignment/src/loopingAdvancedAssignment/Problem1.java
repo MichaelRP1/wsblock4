@@ -8,7 +8,7 @@ public class Problem1 {
         System.out.print("Enter a Number: ");
         int num = scan.nextInt();
         double in;
-        double sum;
+        double sum = 0;
         for(int count = 0; count < num; count++) {
             System.out.print("Enter a Number: ");
             in = scan.nextDouble();
