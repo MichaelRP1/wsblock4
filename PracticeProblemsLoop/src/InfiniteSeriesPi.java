@@ -6,7 +6,7 @@ public class InfiniteSeriesPi {
 		int steps = scan.nextInt();
 		double pi = 0;
 		for (int i = 0; i < steps; i++) {
-			pi += ((Math.pow((-1), (i+1)))/((2*i) - 1));
+			pi += ((4 * Math.pow((-1), (i)))/((2*i) + 1));
 		}
 
 		System.out.println("Pi is: " + pi);
