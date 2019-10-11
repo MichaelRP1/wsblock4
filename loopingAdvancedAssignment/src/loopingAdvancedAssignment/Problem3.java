@@ -33,13 +33,13 @@ public class Problem3 {
                 minName = name;
             }
         }
-        int avg = sum / input;
+        double avg = sum / (input * 1.0);
         System.out.println("Sum of scores: " + sum);
         System.out.println("Average Score: " + avg);
         System.out.println("Highest Scoring Student: " + maxName);
         System.out.println("Highest Score: " + max);
-        System.out.println("Lowest Scoring Student: " + maxName);
-        System.out.println("Lowest Score: " + max);
+        System.out.println("Lowest Scoring Student: " + minName);
+        System.out.println("Lowest Score: " + min);
 
         scan.close();
     }
