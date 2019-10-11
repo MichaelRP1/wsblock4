@@ -8,6 +8,9 @@ public class Problem3 {
         int max = Integer.MIN_VALUE;
         String maxName = "";
 
+        int min = Integer.MAX_VALUE;
+        String minName = "";
+
         System.out.print("Number of students who took test: ");
         int input = scan.nextInt();
         int sum = 0;
@@ -25,11 +28,18 @@ public class Problem3 {
                 max = value;
                 maxName = name;
             }
+            if (value < min) {
+                min = value;
+                minName = name;
+            }
         }
         int avg = sum / input;
+        System.out.println("Sum of scores: " + sum);
         System.out.println("Average Score: " + avg);
         System.out.println("Highest Scoring Student: " + maxName);
         System.out.println("Highest Score: " + max);
+        System.out.println("Lowest Scoring Student: " + maxName);
+        System.out.println("Lowest Score: " + max);
 
         scan.close();
     }
