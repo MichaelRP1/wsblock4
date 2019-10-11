@@ -10,19 +10,24 @@ public class Problem3 {
 
         System.out.print("Number of students who took test: ");
         int input = scan.nextInt();
+        int sum = 0;
+        int value = 0;
+        String name = "";
 
         for (int i = 0; i < input; i++) {
             System.out.print("Enter an Student Name: ");
-            String name = scan.next();
+            name = scan.next();
             System.out.print("Enter their grade: ");
-            int value = scan.nextInt();
+            value = scan.nextInt();
+            sum += value;
 
             if (value > max) {
                 max = value;
                 maxName = name;
             }
         }
-
+        int avg = sum / input;
+        System.out.println("Average Score: " + avg);
         System.out.println("Highest Scoring Student: " + maxName);
         System.out.println("Highest Score: " + max);
 
