@@ -2,10 +2,10 @@ package unit4Assignment;
 
 public class Rectangle {
     // Properties and Variables
-    private double length = 0;
-    private double width = 0;
-    private String color = "";
-    private boolean fill = false;
+    private double length;
+    private double width;
+    private String color;
+    private boolean fill;
     
     public Rectangle() {
         length = 1;
