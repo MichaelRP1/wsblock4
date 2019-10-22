@@ -2,16 +2,12 @@ package unit4Assignment;
 
 public class Rectangle {
     // Properties and Variables
-    private double length;
-    private double width;
-    private String color;
-    private boolean fill;
+    private double length = 1;
+    private double width = 1;
+    private String color = "red";
+    private boolean fill = false;
     
     public Rectangle() {
-        length = 1;
-        width = 1;
-        color = "red";
-        fill = false;
     }
 
     public Rectangle(double nLength, double nWidth, String nColor, boolean nFill) {
@@ -19,6 +15,38 @@ public class Rectangle {
         width = nWidth;
         color = nColor;
         fill = nFill;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double newV) {
+        length = newV;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double newV) {
+        width = newV;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String newV) {
+        color = newV;
+    }
+
+    public boolean getFill() {
+        return fill;
+    }
+
+    public void setFill(boolean newV) {
+        fill = newV;
     }
 
     public double getArea() {
