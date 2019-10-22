@@ -1,6 +1,18 @@
 package unit4Assignment;
 
 public class Rectangle {
+
+    /**
+     * @author Michael Castiglia
+     * @version ALPHA 1.0.0
+     * 
+     * Purpose: To Construct a Rectangle using Length,
+     * Width, Color, and Fill Variables, inbluding the
+     * use of a no-arg constructor
+     * 
+     * Built for: AP Computer Science A (Unit 4 Main Assignment Lab)
+     */
+
     // Properties and Variables
     private double length = 1;
     private double width = 1;
