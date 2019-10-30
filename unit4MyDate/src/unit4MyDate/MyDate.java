@@ -47,30 +47,37 @@ public class MyDate {
     // Start Ordinary Setters and Getters
 
     /**
-     * Setter Methods: setDay, setMonth, and setYear
-     * Getter Methods: getDay, getMonth, and getYear
+     * Mutator Methods: setDay, setMonth, and setYear
+     * Accessor Methods: getDay, getMonth, and getYear
      */
 
      /**
-      * @return the month
+      * @return month
       */
      public int getMonth() {
          return month;
      }
 
      /**
-      * @return the day
+      * @return day
       */
      public int getDay() {
          return day;
      }
 
      /**
-      * @return the year
+      * @return year
       */
      public int getYear() {
          return year;
      }
+
+     /**
+      * Sets Month, Throws Exception if not valid
+      * @param m
+      * @throws Exception
+      * @return void
+      */
 
      public void setMonth(int m) throws Exception {
          if (m < 1 || m > 12) {
@@ -80,6 +87,12 @@ public class MyDate {
         }
      }
 
+     /**
+      * Sets day, throws Exception if not valid
+      * @param d
+      * @throws Exception
+      * @return void
+      */
      public void setDay(int d) throws Exception {
          if (d < 1 || d > 31) {
             throw new Exception("Invalid Day");
@@ -88,12 +101,17 @@ public class MyDate {
         }
      }
 
+     /**
+      * Sets year
+      * @param y
+      * @return void
+      */
      public void setYear(int y) {
          year = y;
      }
 
      /**
-      * toString Returns MM/dd/YYYY
+      * @return MM/dd/YYYY
       */
       public String toString() {
           String string = month + "/" + day + "/" + year;
