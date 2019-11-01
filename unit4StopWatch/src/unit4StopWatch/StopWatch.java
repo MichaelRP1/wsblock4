@@ -4,32 +4,56 @@ public class StopWatch {
     private long startTime = System.currentTimeMillis();
     private long stopTime = 0;
 
+    /**
+     * @return startTime
+     */
     public long getStartTime() {
-        return startTime;
+        return this.startTime;
     }
 
+    /**
+     * @return stopTime
+     */
     public long getStopTime() {
-        return stopTime;
+        return this.stopTime;
     }
 
+    /**
+     * Sets Starttime to Current Time
+     * @see startTime
+     */
     public void start() {
-        startTime = System.currentTimeMillis();
+        this.startTime = System.currentTimeMillis();
     }
 
+    /**
+     * Sets Stop Time to Current Time
+     * @see stopTime
+     */
     public void stop() {
-        stopTime = System.currentTimeMillis();
+        this.stopTime = System.currentTimeMillis();
     }
 
+    /**
+     * Gets Time Elapsed
+     * @see start
+     * @see stop
+     * @return timeElapsed
+     */
     public long getElapsedTime() {
-        if (startTime > stopTime) {
+        if (this.startTime > this.stopTime) {
             return -1;
         }
-        long timeElapsed = stopTime - startTime;
+        long timeElapsed = this.stopTime - this.startTime;
         return timeElapsed;
     }
 
+    /**
+     * Returns String
+     * @return string
+     */
     public String toString() {
-        String string = "Start Time: " + startTime + " Stop Time: " + stopTime + " Elapsed Time: " + getElapsedTime();
+        String string = "Start Time: " + this.startTime + " Stop Time: " + this.stopTime + " Elapsed Time: " + getElapsedTime();
         return string;
     }
 

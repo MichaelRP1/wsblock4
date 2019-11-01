@@ -18,53 +18,94 @@ public class Invoice {
     private int quantity;
     private double price;
 
+    /**
+     * No Arg Constructor
+     */
     public Invoice() {
     }
 
+    /**
+     * @param itemNum
+     * @param desc
+     * @param quantity
+     * @param price
+     */
     public Invoice(String nNum, String nDesc, int nQuan, double nPrice) {
-        itemNum = nNum;
-        desc = nDesc;
-        quantity = nQuan;
-        price = nPrice;
+        this.itemNum = nNum;
+        this.desc = nDesc;
+        this.quantity = nQuan;
+        this.price = nPrice;
     }
 
+    /**
+     * @return itemNum
+     */
     public String getItemNum() {
-        return itemNum;
+        return this.itemNum;
     }
 
+    /**
+     * @param itemNum
+     */
     public void setItemNum(String nNum) {
-        itemNum = nNum;
+        this.itemNum = nNum;
     }
 
+    /**
+     * @return description
+     */
     public String getDesc() {
-        return desc;
+        return this.desc;
     }
 
+    /**
+     * @param description
+     */
     public void setDesc(String nDesc) {
-        desc = nDesc;
+        this.desc = nDesc;
     }
 
+    /**
+     * @return quantity
+     */
     public int getQuanity() {
-        return quantity;
+        return this.quantity;
     }
 
+    /**
+     * @param quantity
+     */
     public void setQuanity(int nQuan) {
-        quantity = nQuan;
+        this.quantity = nQuan;
     }
 
+    /**
+     * @return price
+     */
     public double getPrice() {
-        return price;
+        return this.price;
     }
 
+    /**
+     * @param price
+     */
     public void setPrice(double nPrice) {
-        price = nPrice;
+        this.price = nPrice;
     }
 
+    /**
+     * Makes a toString Statement
+     * @return string
+     */
     public String toString() {
         String printStr = "Item #: " + getItemNum() + " Item Description: " + getDesc() + " Item Quantity: " + getQuanity() + " Individual Price: " + getPrice();
         return printStr;
     }
 
+    /**
+     * Gets total amount.
+     * @return total
+     */
     public double getInvoiceAmount() {
         double total = getQuanity() * getPrice();
         return total;
