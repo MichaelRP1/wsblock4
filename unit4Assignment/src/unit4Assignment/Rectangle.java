@@ -22,64 +22,64 @@ public class Rectangle {
     public Rectangle() {
     }
 
-    public Rectangle(double nLength, double nWidth, String nColor, boolean nFill) {
-        length = nLength;
-        width = nWidth;
-        color = nColor;
-        fill = nFill;
+    public Rectangle(double length, double width, String color, boolean fill) {
+        this.length = length;
+        this.width = width;
+        this.color = color;
+        this.fill = fill;
     }
 
     public double getLength() {
-        return length;
+        return this.length;
     }
 
     public void setLength(double newV) {
-        length = newV;
+        this.length = newV;
     }
 
     public double getWidth() {
-        return width;
+        return this.width;
     }
 
     public void setWidth(double newV) {
-        width = newV;
+        this.width = newV;
     }
 
     public String getColor() {
-        return color;
+        return this.color;
     }
 
     public void setColor(String newV) {
-        color = newV;
+        this.color = newV;
     }
 
     public boolean getFill() {
-        return fill;
+        return this.fill;
     }
 
     public void setFill(boolean newV) {
-        fill = newV;
+        this.fill = newV;
     }
 
     public double getArea() {
-        double area = length * width;
+        double area = this.length * this.width;
         return area;
     }
 
     public double getPerimeter() {
-        double perimeter = 2 * (length + width);
+        double perimeter = 2 * (this.length + this.width);
         return perimeter;
     }
 
     public String toString() {
-        double area = length * width;
-        double perimeter = 2 * (length + width);
-        String string = "Length: " + length + ", Width: " + width + ", Color: " + color + ", Area: " + area + ", Perimeter: " + perimeter + ", and Fill: " + fill;
+        double area = this.length * this.width;
+        double perimeter = 2 * (this.length + this.width);
+        String string = "Length: " + this.length + ", Width: " + this.width + ", Color: " + this.color + ", Area: " + area + ", Perimeter: " + perimeter + ", and Fill: " + this.fill;
         return string;
     }
 
     public double getDiagonal() {
-        double diag = Math.sqrt(Math.pow(length, 2) + Math.pow(width, 2));
+        double diag = Math.sqrt(Math.pow(this.length, 2) + Math.pow(this.width, 2));
         return diag;
     }
 }

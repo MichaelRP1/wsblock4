@@ -31,16 +31,16 @@ public class MyDate {
         if (m < 1 || m > 12) {
             throw new Exception("Invalid Month");
         } else {
-            month = m;
+            this.month = m;
         }
 
         if (d < 1 || d > 31) {
             throw new Exception("Invalid Day");
         } else {
-            day = d;
+            this.day = d;
         }
 
-        year = y;
+        this.year = y;
     }
     // End Contructors
 
@@ -55,21 +55,21 @@ public class MyDate {
       * @return month
       */
      public int getMonth() {
-         return month;
+         return this.month;
      }
 
      /**
       * @return day
       */
      public int getDay() {
-         return day;
+         return this.day;
      }
 
      /**
       * @return year
       */
      public int getYear() {
-         return year;
+         return this.year;
      }
 
      /**
@@ -83,7 +83,7 @@ public class MyDate {
          if (m < 1 || m > 12) {
             throw new Exception("Invalid Month");
         } else {
-            month = m;
+            this.month = m;
         }
      }
 
@@ -97,7 +97,7 @@ public class MyDate {
          if (d < 1 || d > 31) {
             throw new Exception("Invalid Day");
         } else {
-            day = d;
+            this.day = d;
         }
      }
 
@@ -107,14 +107,14 @@ public class MyDate {
       * @return void
       */
      public void setYear(int y) {
-         year = y;
+        this.year = y;
      }
 
      /**
       * @return MM/dd/YYYY
       */
       public String toString() {
-          String string = month + "/" + day + "/" + year;
+          String string = this.month + "/" + this.day + "/" + this.year;
           return string;
       }
 }

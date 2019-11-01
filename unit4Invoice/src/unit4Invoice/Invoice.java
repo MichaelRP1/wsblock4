@@ -22,42 +22,42 @@ public class Invoice {
     }
 
     public Invoice(String nNum, String nDesc, int nQuan, double nPrice) {
-        itemNum = nNum;
-        desc = nDesc;
-        quantity = nQuan;
-        price = nPrice;
+        this.itemNum = nNum;
+        this.desc = nDesc;
+        this.quantity = nQuan;
+        this.price = nPrice;
     }
 
     public String getItemNum() {
-        return itemNum;
+        return this.itemNum;
     }
 
     public void setItemNum(String nNum) {
-        itemNum = nNum;
+        this.itemNum = nNum;
     }
 
     public String getDesc() {
-        return desc;
+        return this.desc;
     }
 
     public void setDesc(String nDesc) {
-        desc = nDesc;
+        this.desc = nDesc;
     }
 
     public int getQuanity() {
-        return quantity;
+        return this.quantity;
     }
 
     public void setQuanity(int nQuan) {
-        quantity = nQuan;
+        this.quantity = nQuan;
     }
 
     public double getPrice() {
-        return price;
+        return this.price;
     }
 
     public void setPrice(double nPrice) {
-        price = nPrice;
+        this.price = nPrice;
     }
 
     public String toString() {
