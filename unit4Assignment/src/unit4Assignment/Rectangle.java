@@ -22,6 +22,12 @@ public class Rectangle {
     public Rectangle() {
     }
 
+    /**
+     * @param length
+     * @param width
+     * @param color
+     * @param fill
+     */
     public Rectangle(double length, double width, String color, boolean fill) {
         this.length = length;
         this.width = width;
@@ -29,48 +35,81 @@ public class Rectangle {
         this.fill = fill;
     }
 
+    /**
+     * @return length
+     */
     public double getLength() {
         return this.length;
     }
 
+    /**
+     * @param length
+     */
     public void setLength(double newV) {
         this.length = newV;
     }
 
+    /**
+     * @return width
+     */
     public double getWidth() {
         return this.width;
     }
 
+    /**
+     * @param length
+     */
     public void setWidth(double newV) {
         this.width = newV;
     }
 
+    /**
+     * @return color
+     */
     public String getColor() {
         return this.color;
     }
 
+    /**
+     * @param color
+     */
     public void setColor(String newV) {
         this.color = newV;
     }
 
+    /**
+     * @return fill
+     */
     public boolean getFill() {
         return this.fill;
     }
 
+    /**
+     * @param fill
+     */
     public void setFill(boolean newV) {
         this.fill = newV;
     }
 
+    /**
+     * @return area
+     */
     public double getArea() {
         double area = this.length * this.width;
         return area;
     }
 
+    /**
+     * @return area
+     */
     public double getPerimeter() {
         double perimeter = 2 * (this.length + this.width);
         return perimeter;
     }
 
+    /**
+     * @return String
+     */
     public String toString() {
         double area = this.length * this.width;
         double perimeter = 2 * (this.length + this.width);
@@ -78,6 +117,9 @@ public class Rectangle {
         return string;
     }
 
+    /**
+     * @return diagonal length
+     */
     public double getDiagonal() {
         double diag = Math.sqrt(Math.pow(this.length, 2) + Math.pow(this.width, 2));
         return diag;
