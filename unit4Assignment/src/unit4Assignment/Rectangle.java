@@ -27,10 +27,20 @@ public class Rectangle {
      * @param width
      * @param color
      * @param fill
+     * @throws Exception
      */
-    public Rectangle(double length, double width, String color, boolean fill) {
-        this.length = length;
-        this.width = width;
+    public Rectangle(double length, double width, String color, boolean fill) throws Exception {
+        if (length < 0) {
+            throw new Exception("Length must be > 0");
+        } else {
+            this.length = length;
+        }
+        if (width < 0) {
+            throw new Exception("Width must be > 0");
+        } else {
+            this.width = width;
+        }
+
         this.color = color;
         this.fill = fill;
     }
@@ -44,9 +54,14 @@ public class Rectangle {
 
     /**
      * @param length
+     * @throws Exception
      */
-    public void setLength(double newV) {
-        this.length = newV;
+    public void setLength(double newV) throws Exception {
+        if (newV < 0) {
+            throw new Exception("Length must be > 0");
+        } else {
+            this.length = newV;
+        }
     }
 
     /**
@@ -59,8 +74,12 @@ public class Rectangle {
     /**
      * @param length
      */
-    public void setWidth(double newV) {
-        this.width = newV;
+    public void setWidth(double newV) throws Exception {
+        if (newV < 0) {
+            throw new Exception("Width must be > 0");
+        } else {
+            this.width = newV;
+        }
     }
 
     /**
