@@ -37,6 +37,14 @@ public class Invoice {
         this.price = nPrice;
     }
 
+    //Copy Constructor
+    public Invoice(Invoice i) {
+        this.itemNum = i.itemNum;
+        this.desc = i.desc;
+        this.quantity = i.quantity;
+        this.price = i.price;
+    }
+
     /**
      * @return itemNum
      */

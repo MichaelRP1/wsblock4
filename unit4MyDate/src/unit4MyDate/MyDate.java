@@ -21,6 +21,12 @@ public class MyDate {
 
     }
 
+    public MyDate(MyDate d) {
+        this.year = d.year;
+        this.month = d.month;
+        this.day = d.day;
+    }
+
     /**
      * Variable Order:
      * Month, Day, Year
