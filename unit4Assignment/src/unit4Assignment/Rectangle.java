@@ -45,6 +45,13 @@ public class Rectangle {
         this.fill = fill;
     }
 
+    public Rectangle(Rectangle r) throws Exception {
+        this.length = r.length;
+        this.width = r. width;
+        this.color = r.color;
+        this.fill = r.fill;
+    }
+
     /**
      * @return length
      */

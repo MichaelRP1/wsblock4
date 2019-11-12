@@ -4,6 +4,16 @@ public class StopWatch {
     private long startTime = System.currentTimeMillis();
     private long stopTime = 0;
 
+    //Constructors
+    public StopWatch() {
+
+    }
+
+    public StopWatch(StopWatch s) {
+        this.startTime = s.startTime;
+        this.stopTime = s.stopTime;
+    }
+
     /**
      * @return startTime
      */
