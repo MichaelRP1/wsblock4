@@ -9,6 +9,10 @@ public class StopWatch {
 
     }
 
+    /**
+     * Copy Constructor
+     * @param StopWatch object
+     */
     public StopWatch(StopWatch s) {
         this.startTime = s.startTime;
         this.stopTime = s.stopTime;

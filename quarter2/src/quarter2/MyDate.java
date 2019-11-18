@@ -21,6 +21,12 @@ public class MyDate {
 
     }
 
+    /**
+     * Constructor
+     * @param year
+     * @param month
+     * @param day
+     */
     public MyDate(MyDate d) {
         this.year = d.year;
         this.month = d.month;

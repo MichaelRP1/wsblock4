@@ -25,10 +25,10 @@ public class Invoice {
     }
 
     /**
-     * @param itemNum
-     * @param desc
-     * @param quantity
-     * @param price
+     * @param itemNum item number
+     * @param desc description of item
+     * @param quantity quantity of items
+     * @param price price for each item
      */
     public Invoice(String nNum, String nDesc, int nQuan, double nPrice) {
         this.itemNum = nNum;
@@ -53,7 +53,7 @@ public class Invoice {
     }
 
     /**
-     * @param itemNum
+     * @param itemNum item number
      */
     public void setItemNum(String nNum) {
         this.itemNum = nNum;
@@ -67,7 +67,7 @@ public class Invoice {
     }
 
     /**
-     * @param description
+     * @param desc item decription
      */
     public void setDesc(String nDesc) {
         this.desc = nDesc;
@@ -81,7 +81,7 @@ public class Invoice {
     }
 
     /**
-     * @param quantity
+     * @param quantity number of items
      */
     public void setQuanity(int nQuan) {
         this.quantity = nQuan;
@@ -95,7 +95,7 @@ public class Invoice {
     }
 
     /**
-     * @param price
+     * @param price price per item
      */
     public void setPrice(double nPrice) {
         this.price = nPrice;
