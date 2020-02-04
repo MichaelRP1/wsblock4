@@ -25,7 +25,7 @@ public class AP2015Problem1 {
         int[] sums = rowSums(arr);
         for(int i = 0; i < sums.length; i++) {
             for(int j = 0; j < sums.length; j++) {
-                if((sums[i] == sums[j]) && (i != j)) {
+                if((i != j) && (sums[i] == sums[j])) {
                     return false;
                 }
             }
