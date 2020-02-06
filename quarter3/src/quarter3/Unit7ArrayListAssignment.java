@@ -28,5 +28,13 @@ class Unit7ArrayListAssignment {
         System.out.println(val);
 
         System.out.println(arr);
+
+        /* 0
+        0 3 6 9 12 15 18 21 24 27 
+        [0, 3, 6, 5, 9, 12, 15, 18, 21, 24, 27]
+        18
+        [0, 3, 6, 5, 9, 12, 15, 4, 21, 24, 27]
+        0
+        [3, 6, 5, 9, 12, 15, 4, 21, 24, 27] */
     }
 }
