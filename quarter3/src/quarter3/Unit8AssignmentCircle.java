@@ -1,7 +1,7 @@
 package quarter3;
 
 public class Unit8AssignmentCircle extends Unit8AssignmentGeoObj {
-    double radius = 1;
+    private double radius = 1;
 
     public Unit8AssignmentCircle() {}
 

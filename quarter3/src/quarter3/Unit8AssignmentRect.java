@@ -1,8 +1,8 @@
 package quarter3;
 
 public class Unit8AssignmentRect extends Unit8AssignmentGeoObj {
-    double length = 1;
-    double width = 1;
+    private double length = 1;
+    private double width = 1;
 
     public Unit8AssignmentRect() {}
 
